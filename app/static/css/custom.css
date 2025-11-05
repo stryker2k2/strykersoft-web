@@ -2,3 +2,18 @@
   width: 30px; /* Adjust size as needed */
   height: 30px; /* Adjust size as needed */
 }
+
+.bg-img {
+  /* The image used */
+  background-image: url("../img/banner_005.png");
+
+  min-height: 100px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}

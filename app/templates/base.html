@@ -13,9 +13,10 @@
   <body class="bg-dark text-light text-center">
     <header>
         <div>
-            <br>
-            {% include 'navbar.html' %}
-            <br>
+          <!-- <br> -->
+          {% include 'banner.html' %}
+          {% include 'navbar.html' %}
+          <br>
         </div>
     </header>
     <main>
@@ -23,10 +24,11 @@
         <div class="container">
             {% block content %}{% endblock %}
         </div>
+        <br><br><br><br><br>
     </main>
     <footer>
         <div class="text-center py-3 fixed-bottom bg-dark border-top">
-            <p>&copy; Black Lantern Security 2025</p>
+            <p>&copy; Strykersoft 2025</p>
         </div>        
     </footer>
     
