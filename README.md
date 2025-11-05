@@ -1,3 +1,3 @@
-#### CTF Web Portal for DEFCON 34
+#### Strykersoft Website
 
-This is a repo for the CTF Web Portal that allows participants to dynamically start up a victim CTF box.
+A Flask Website for https://strykersoft.us
