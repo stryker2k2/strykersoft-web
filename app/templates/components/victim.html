@@ -1,0 +1,39 @@
+<!-- victim.html -->
+
+<div class="card my-3" data-bs-theme="dark">
+    <div class="card-header">
+        Node {{container['vmid']}}
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4 d-flex align-items-center">
+                <span>
+                    <div class="position-relative">
+                        {% if container['status'] == 'running' %}
+                            <span class="badge bg-success fs-6 my-1"><i class="bi bi-check-circle-fill me-1"></i>Online</span>
+                        {% elif container['status'] == 'stopped' %}
+                            <span class="badge bg-danger fs-6 my-1"><i class="bi bi-x-circle-fill me-1"></i>Offline</span>
+                        {% endif %}
+                        
+                        <!-- <span class="badge bg-success fs-6"><i class="bi bi-check-circle-fill me-1"></i>Online</span> -->
+                        <div class="d-flex flex-row justify-content-center my-1">
+                            <a href="#" class="btn btn-warning mx-1"><i class="bi bi-repeat"></i></a>
+                            {% if container['status'] == 'running' %}
+                                <a href="#" class="btn btn-danger mx-1"><i class="bi bi-power"></i></a>
+                            {% elif container['status'] == 'stopped' %}
+                                <a href="#" class="btn btn-success mx-1"><i class="bi bi-power"></i></a>
+                            {% endif %}
+                            
+                            
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-8">
+                <h5 class="card-title">{{container['name']}}</h5>
+                <p class="card-text">{{container['status']}}</p>
+                <p class="card-text">IP: 192.168.1.{{container['vmid']}}</p>
+            </div>
+        </div>
+    </div>
+</div>

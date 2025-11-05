@@ -1,0 +1,20 @@
+[
+    {
+        "order": 1,
+        "title": "Bronze",
+        "description": "Easy as Pie",
+        "subtext": "The easiest challenge with a great walkthru"
+    },
+    {
+        "order": 2,
+        "title": "Silver",
+        "description": "Test your Skills",
+        "subtext": "A medium skill challenge with hints in the code"
+    },
+    {
+        "order": 3,
+        "title": "Gold",
+        "description": "Scale Mount Epic",
+        "subtext": "Can you find the exploit and find the local user's password?"
+    }
+]

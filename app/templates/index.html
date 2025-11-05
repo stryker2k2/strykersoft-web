@@ -1,0 +1,22 @@
+<!-- index.html -->
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <h2>Welcome to Strykersoft</h2>
+    <p>Home Page for all my side projects!</p>
+
+    {% for class in data %}
+        <div class="row my-3">
+            <div class="col-3"></div>
+            <div class="col-6">
+                {% with class=class %}
+                    {% include 'components/medals.html' %}
+                {% endwith %}
+            </div>
+            <div class="col-2"></div>
+        </div>
+        
+    {% endfor %}
+{% endblock %}
